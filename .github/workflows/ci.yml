@@ -1,0 +1,29 @@
+# .github/workflows/ci.yml
+
+name: CI/CD Pipeline for ML Model Training
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  train-model:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4 
+
+    - name: Set up Python environment
+      uses: actions/setup-python@v5 
+      with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Run model training and save accuracy
+      run: python train.py > accuracy.txt
+      
+    - name: Display training result
+      run: cat accuracy.txt
