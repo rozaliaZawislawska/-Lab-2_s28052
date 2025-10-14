@@ -5,6 +5,8 @@ from faker import Faker
 import argparse
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+import os
+import json
 
 # Funkcja, która generuje dane na podstawie numeru studenta
 def generate_data(student_number, n_samples=1000):
