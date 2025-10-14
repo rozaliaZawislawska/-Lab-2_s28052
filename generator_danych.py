@@ -116,7 +116,7 @@ if __name__ == "__main__":
         worksheet = spreadsheet.sheet1
 
         worksheet.clear()
-        gspread.dataframe.set_with_dataframe(worksheet, df, include_index=False)
+        set_with_dataframe(worksheet, df, include_index=False)
 
         print(f"Dane zostały przesłane do arkusza Google Sheets o ID '{SHEET_ID}'")
     except Exception as e:
