@@ -3,6 +3,8 @@ import pandas as pd
 import random
 from faker import Faker
 import argparse
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
 
 # Funkcja, która generuje dane na podstawie numeru studenta
 def generate_data(student_number, n_samples=1000):
@@ -93,4 +95,28 @@ if __name__ == "__main__":
     df.to_csv(filename, index=False)
     
     print(f"Dane zostały wygenerowane i zapisane w pliku '{filename}'")
+
+    try:
+        credentials_json = os.environ.get("GCP_CREDENTIALS")
+        SHEET_ID = os.environ.get("SHEET_ID")
+
+        if credentials_json is None or SHEET_ID is None:
+            raise ValueError("Brak sekretów GCP_CREDENTIALS lub SHEET_ID.")
+        
+        scope = ["https://spreadsheets.google.com/feeds",  "https://www.googleapis.com/auth/drive"]
+        credentials = ServiceAccountCredentials.from_json_keyfile_dict(
+            json.loads(credentials_json),
+            scopes=scope
+        )
+        gc = gspread.authorize(credentials)
+
+        spreadsheet = gc.open_by_key(SHEET_ID)
+        worksheet = spreadsheet.sheet1
+
+        worksheet.clear()
+        gspread.dataframe.set_with_dataframe(worksheet, df, include_index=False)
+
+        print(f"Dane zostały przesłane do arkusza Google Sheets o ID '{SHEET_ID}'")
+    except Exception as e:
+        print(f"Nie udało się przesłać danych do Google Sheets: {e}")
 

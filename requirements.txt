@@ -2,3 +2,6 @@ numpy
 pandas
 faker
 argparse
+pandas 
+gspread 
+oauth2client
