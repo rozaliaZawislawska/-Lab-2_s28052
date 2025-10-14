@@ -3,8 +3,8 @@ import pandas as pd
 import random
 from faker import Faker
 import argparse
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+import gspread 
+from gspread_dataframe import set_with_dataframe
 import os
 import json
 
