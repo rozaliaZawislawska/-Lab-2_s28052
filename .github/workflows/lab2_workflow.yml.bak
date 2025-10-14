@@ -19,5 +19,5 @@ jobs:
           # Przekazanie secreta do zmiennej środowiskowej
           GCP_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }} 
           # Możesz też przekazać ID Arkusza, jeśli nie jest "zaszyty" w skrypcie
-          SHEET_ID: 'TUTAJ_WPROWADZ_ID_ARKUSZA' 
-        run: python3 generowanie.py 
+          SHEET_ID: '1yAadaH9J2lHvn8sbO33jqia4opqYYAHZ1sR7yevztKQ' 
+        run: python3 generator_danych.py 
