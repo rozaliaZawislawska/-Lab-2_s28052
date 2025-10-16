@@ -1,0 +1,42 @@
+name: Lab2 Data Pipeline - Processing
+
+# Uruchom ten workflow za każdym razem, gdy zmieniasz coś w gałęzi 'Lab2'
+on:
+  push:
+    branches:
+      - Lab2
+  workflow_dispatch: # Dodaj to, aby można było ręcznie uruchomić workflow z poziomu GitHub Actions
+
+jobs:
+  data_processing:
+    runs-on: ubuntu-latest # Wybór środowiska (Linux jest standardem)
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        # Pobranie kodu z repozytorium
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11' # Upewnij się, że wersja pasuje do Twojego venv
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        # Instaluje pandas, gspread, oauth2client, scikit-learn itd.
+
+      - name: Uruchom skrypt czyszczący i standaryzujący dane
+        env:
+          # KLUCZOWY KROK: Wstrzyknięcie sekretów jako zmiennych środowiskowych
+          GCP_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
+          SHEET_ID: ${{ secrets.SHEET_ID }}
+        run: python data_processor.py
+        # Skrypt generuje plik report.txt
+
+      - name: Weryfikacja czystości i wyświetlenie raportu
+        # Wyświetla zawartość wygenerowanego pliku report.txt w logach
+        run: |
+          echo "--- RAPORT Z PRZETWARZANIA DANYCH ---"
+          cat report.txt

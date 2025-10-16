@@ -1,0 +1,209 @@
+2025-10-16 18:21:18,500 - data_processor - INFO - Logger initialized
+2025-10-16 18:49:24,784 - data_processor - INFO - Logger initialized
+2025-10-16 18:49:24,784 - data_processor - INFO - Starting data processing
+2025-10-16 18:58:59,745 - data_processor - INFO - Logger initialized
+2025-10-16 18:58:59,746 - data_processor - INFO - Starting data processing
+2025-10-16 18:59:25,723 - data_processor - INFO - Logger initialized
+2025-10-16 18:59:25,723 - data_processor - INFO - Starting data processing
+2025-10-16 19:01:06,020 - data_processor - INFO - Logger initialized
+2025-10-16 19:01:06,020 - data_processor - INFO - Starting data processing
+2025-10-16 19:02:09,816 - data_processor - INFO - Logger initialized
+2025-10-16 19:02:09,816 - data_processor - INFO - Starting data processing
+2025-10-16 19:03:01,553 - data_processor - INFO - Logger initialized
+2025-10-16 19:03:01,554 - data_processor - INFO - Starting data processing
+2025-10-16 20:59:43,236 - data_processor - INFO - Logger initialized
+2025-10-16 20:59:43,237 - data_processor - INFO - Starting data processing
+2025-10-16 20:59:43,237 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:00:47,757 - data_processor - INFO - Logger initialized
+2025-10-16 21:00:47,757 - data_processor - INFO - Starting data processing
+2025-10-16 21:00:47,758 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:01:23,423 - data_processor - INFO - Logger initialized
+2025-10-16 21:01:23,424 - data_processor - INFO - Starting data processing
+2025-10-16 21:01:23,425 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:01:27,038 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 999
+2025-10-16 21:02:44,291 - data_processor - INFO - Logger initialized
+2025-10-16 21:02:44,292 - data_processor - INFO - Starting data processing
+2025-10-16 21:02:44,292 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:02:48,198 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 999
+2025-10-16 21:02:48,216 - data_processor - INFO -      Kobieta    37     Œrednie   4466.65  09:09  11:48  Rozrywka
+0    Kobieta  64.0     Œrednie  12471.22  14:18  00:01  Rozrywka
+1  Mê¿czyzna  50.0  Podstawowe  10319.37  23:07  04:40    Zakupy
+2    Kobieta  43.0         NaN  14588.60  22:25  00:38     Praca
+3  Mê¿czyzna  51.0      Wy¿sze  11611.33  11:33  11:41      Inne
+4    Kobieta  18.0  Podstawowe   7080.56  20:59  06:12  Rozrywka
+2025-10-16 21:03:30,558 - data_processor - INFO - Logger initialized
+2025-10-16 21:03:30,559 - data_processor - INFO - Starting data processing
+2025-10-16 21:03:30,560 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:03:34,233 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 999
+2025-10-16 21:03:42,775 - data_processor - INFO - Logger initialized
+2025-10-16 21:03:42,775 - data_processor - INFO - Starting data processing
+2025-10-16 21:03:42,776 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:03:47,049 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 999
+2025-10-16 21:03:47,073 - data_processor - INFO - <bound method NDFrame.last of        Kobieta    37     Œrednie   4466.65  09:09  11:48  Rozrywka
+0      Kobieta  64.0     Œrednie  12471.22  14:18  00:01  Rozrywka
+1    Mê¿czyzna  50.0  Podstawowe  10319.37  23:07  04:40    Zakupy
+2      Kobieta  43.0         NaN  14588.60  22:25  00:38     Praca
+3    Mê¿czyzna  51.0      Wy¿sze  11611.33  11:33  11:41      Inne
+4      Kobieta  18.0  Podstawowe   7080.56  20:59  06:12  Rozrywka
+..         ...   ...         ...       ...    ...    ...       ...
+994  Mê¿czyzna  70.0     Œrednie   9195.85  23:49    NaN     Praca
+995    Kobieta  39.0     Œrednie  12597.73  22:26  03:43    Zakupy
+996  Mê¿czyzna  20.0     Œrednie  11482.81  17:16  04:59  Edukacja
+997    Kobieta  61.0      Wy¿sze  12140.74  18:10  01:46    Zakupy
+998  Mê¿czyzna  47.0  Podstawowe  11706.91  18:43  00:35     Praca
+
+[999 rows x 7 columns]>
+2025-10-16 21:13:14,505 - data_processor - INFO - Logger initialized
+2025-10-16 21:13:14,507 - data_processor - INFO - Starting data processing
+2025-10-16 21:13:14,509 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:13:19,380 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 999
+2025-10-16 21:13:19,383 - data_processor - INFO - Kobieta      Kobieta
+37              64.0
+Œrednie      Œrednie
+4466.65     12471.22
+09:09          14:18
+11:48          00:01
+Rozrywka    Rozrywka
+Name: 0, dtype: object
+2025-10-16 21:13:39,481 - data_processor - INFO - Logger initialized
+2025-10-16 21:13:39,481 - data_processor - INFO - Starting data processing
+2025-10-16 21:13:39,482 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:13:43,648 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 999
+2025-10-16 21:13:43,650 - data_processor - INFO - Kobieta      Mê¿czyzna
+37                50.0
+Œrednie     Podstawowe
+4466.65       10319.37
+09:09            23:07
+11:48            04:40
+Rozrywka        Zakupy
+Name: 1, dtype: object
+2025-10-16 21:17:07,228 - data_processor - INFO - Logger initialized
+2025-10-16 21:17:07,229 - data_processor - INFO - Starting data processing
+2025-10-16 21:17:07,229 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:17:11,102 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 1000
+2025-10-16 21:17:11,116 - data_processor - INFO -           P³eæ  Wiek Wykszta³cenie  Œrednie Zarobki Czas Pocz¹tkowy Podró¿y Czas Koñcowy Podró¿y Cel Podró¿y
+0      Kobieta  37.0       Œrednie          4466.65                   09:09                11:48    Rozrywka
+1      Kobieta  64.0       Œrednie         12471.22                   14:18                00:01    Rozrywka
+2    Mê¿czyzna  50.0    Podstawowe         10319.37                   23:07                04:40      Zakupy
+3      Kobieta  43.0           NaN         14588.60                   22:25                00:38       Praca
+4    Mê¿czyzna  51.0        Wy¿sze         11611.33                   11:33                11:41        Inne
+..         ...   ...           ...              ...                     ...                  ...         ...
+995  Mê¿czyzna  70.0       Œrednie          9195.85                   23:49                  NaN       Praca
+996    Kobieta  39.0       Œrednie         12597.73                   22:26                03:43      Zakupy
+997  Mê¿czyzna  20.0       Œrednie         11482.81                   17:16                04:59    Edukacja
+998    Kobieta  61.0        Wy¿sze         12140.74                   18:10                01:46      Zakupy
+999  Mê¿czyzna  47.0    Podstawowe         11706.91                   18:43                00:35       Praca
+
+[1000 rows x 7 columns]
+2025-10-16 21:17:35,003 - data_processor - INFO - Logger initialized
+2025-10-16 21:17:35,003 - data_processor - INFO - Starting data processing
+2025-10-16 21:17:35,004 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:17:38,964 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 1000
+2025-10-16 21:17:38,989 - data_processor - INFO -         P³eæ  Wiek Wykszta³cenie  Œrednie Zarobki Czas Pocz¹tkowy Podró¿y Czas Koñcowy Podró¿y Cel Podró¿y
+1    Kobieta  64.0       Œrednie         12471.22                   14:18                00:01    Rozrywka
+2  Mê¿czyzna  50.0    Podstawowe         10319.37                   23:07                04:40      Zakupy
+3    Kobieta  43.0           NaN         14588.60                   22:25                00:38       Praca
+4  Mê¿czyzna  51.0        Wy¿sze         11611.33                   11:33                11:41        Inne
+2025-10-16 21:20:23,723 - data_processor - INFO - Logger initialized
+2025-10-16 21:20:23,724 - data_processor - INFO - Starting data processing
+2025-10-16 21:20:23,724 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:20:28,035 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 1000
+2025-10-16 21:20:28,036 - data_processor - INFO - P³eæ                       Mê¿czyzna
+Wiek                            63.0
+Wykszta³cenie                Œrednie
+Œrednie Zarobki              9792.96
+Czas Pocz¹tkowy Podró¿y        09:39
+Czas Koñcowy Podró¿y           20:03
+Cel Podró¿y                 Edukacja
+Name: 25, dtype: object
+2025-10-16 21:21:58,438 - data_processor - INFO - Logger initialized
+2025-10-16 21:21:58,438 - data_processor - INFO - Starting data processing
+2025-10-16 21:21:58,439 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:22:03,024 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 1000
+2025-10-16 21:22:03,028 - data_processor - INFO - P³eæ                        Mê¿czyzna
+Wiek                             54.0
+Wykszta³cenie              Podstawowe
+Œrednie Zarobki               6404.88
+Czas Pocz¹tkowy Podró¿y         18:02
+Czas Koñcowy Podró¿y            03:27
+Cel Podró¿y                      Inne
+Name: 22, dtype: object
+2025-10-16 21:25:11,215 - data_processor - INFO - Logger initialized
+2025-10-16 21:25:11,216 - data_processor - INFO - Starting data processing
+2025-10-16 21:25:11,216 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:25:14,571 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 1000
+2025-10-16 21:25:14,573 - data_processor - INFO - P³eæ                       Kobieta
+Wiek                           NaN
+Wykszta³cenie                  NaN
+Œrednie Zarobki            4794.28
+Czas Pocz¹tkowy Podró¿y        NaN
+Czas Koñcowy Podró¿y           NaN
+Cel Podró¿y                    NaN
+Name: 23, dtype: object
+2025-10-16 21:25:14,589 - data_processor - INFO -       P³eæ   Wiek  Wykszta³cenie  Œrednie Zarobki  Czas Pocz¹tkowy Podró¿y  Czas Koñcowy Podró¿y  Cel Podró¿y
+0    False  False          False            False                    False                 False        False
+1    False  False          False            False                    False                 False        False
+2    False  False          False            False                    False                 False        False
+3    False  False           True            False                    False                 False        False
+4    False  False          False            False                    False                 False        False
+..     ...    ...            ...              ...                      ...                   ...          ...
+995  False  False          False            False                    False                  True        False
+996  False  False          False            False                    False                 False        False
+997  False  False          False            False                    False                 False        False
+998  False  False          False            False                    False                 False        False
+999  False  False          False            False                    False                 False        False
+
+[1000 rows x 7 columns]
+2025-10-16 21:28:33,296 - data_processor - INFO - Logger initialized
+2025-10-16 21:28:33,296 - data_processor - INFO - Starting data processing
+2025-10-16 21:28:33,297 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:28:36,995 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 1000
+2025-10-16 21:28:37,015 - data_processor - INFO - 6      1
+5     19
+1     48
+0    932
+Name: count, dtype: int64
+2025-10-16 21:29:49,325 - data_processor - INFO - Logger initialized
+2025-10-16 21:29:49,326 - data_processor - INFO - Starting data processing
+2025-10-16 21:29:49,326 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 21:29:53,627 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 1000
+2025-10-16 21:29:53,636 - data_processor - INFO - 26    1
+25    1
+21    1
+20    1
+19    3
+Name: count, dtype: int64
+2025-10-16 22:46:26,221 - data_processor - INFO - Logger initialized
+2025-10-16 22:46:26,221 - data_processor - INFO - Starting getting data from Google Sheets
+2025-10-16 22:46:26,222 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 22:46:30,314 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 1000
+2025-10-16 22:46:30,318 - data_processor - INFO - 26    1
+25    1
+21    1
+20    1
+19    3
+Name: count, dtype: int64
+2025-10-16 22:47:13,695 - data_processor - INFO - Logger initialized
+2025-10-16 22:47:13,695 - data_processor - INFO - Starting getting data from Google Sheets
+2025-10-16 22:47:13,695 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 22:47:16,979 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 1000
+2025-10-16 22:47:16,982 - data_processor - INFO - Starting data processing
+2025-10-16 22:47:16,985 - data_processor - INFO - Usuniêto 20 wierszy o zbyt du¿ej liczbie braków.
+2025-10-16 22:47:16,991 - data_processor - INFO - Uzupe³niono braki w 32 komórkach (median¹ lub mod¹).
+2025-10-16 22:47:16,992 - data_processor - INFO - Raport zapisany do report.txt. Zwracam przetworzony DataFrame.
+2025-10-16 23:01:21,716 - data_processor - INFO - Rozpoczêcie pobierania danych z Google Sheets
+2025-10-16 23:01:21,717 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 23:01:25,378 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 1000
+2025-10-16 23:01:25,380 - data_processor - INFO - Rozpoczêcie czyszczenia i standaryzacji danych
+2025-10-16 23:01:25,384 - data_processor - INFO - Usuniêto 20 wierszy o zbyt du¿ej liczbie braków.
+2025-10-16 23:01:25,387 - data_processor - INFO - Uzupe³niono braki w 32 komórkach (median¹ lub mod¹).
+2025-10-16 23:01:25,390 - data_processor - INFO - Standaryzacja Z-Score dla kolumn ['Wiek', 'Œrednie Zarobki'] zakoñczona.
+2025-10-16 23:01:25,391 - data_processor - INFO - Raport zapisany do report.txt. Zwracam przetworzony DataFrame.
+2025-10-16 23:02:03,962 - data_processor - INFO - Rozpoczêcie pobierania danych z Google Sheets
+2025-10-16 23:02:03,963 - data_processor - WARNING - Brak zmiennych œrodowiskowych. U¿ywam lokalnego pliku klucza dla testów.
+2025-10-16 23:02:07,378 - data_processor - INFO - Pomyœlnie pobrano dane. Pocz¹tkowa liczba wierszy: 1000
+2025-10-16 23:02:07,381 - data_processor - INFO - Rozpoczêcie czyszczenia i standaryzacji danych
+2025-10-16 23:02:07,385 - data_processor - INFO - Usuniêto 20 wierszy o zbyt du¿ej liczbie braków.
+2025-10-16 23:02:07,387 - data_processor - INFO - Uzupe³niono braki w 32 komórkach (median¹ lub mod¹).
+2025-10-16 23:02:07,391 - data_processor - INFO - Standaryzacja Z-Score dla kolumn ['Wiek', 'Œrednie Zarobki'] zakoñczona.
+2025-10-16 23:02:07,392 - data_processor - INFO - Raport zapisany do report.txt. Zwracam przetworzony DataFrame.

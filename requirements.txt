@@ -5,3 +5,6 @@ argparse
 pandas 
 gspread 
 oauth2client
+gspread_dataframe
+Faker
+scikit-learn

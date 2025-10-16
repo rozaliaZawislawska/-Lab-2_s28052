@@ -3,8 +3,11 @@ import pandas as pd
 import random
 from faker import Faker
 import argparse
-import gspread
+import gspread 
 from oauth2client.service_account import ServiceAccountCredentials
+from gspread_dataframe import set_with_dataframe
+import os
+import json
 
 # Funkcja, która generuje dane na podstawie numeru studenta
 def generate_data(student_number, n_samples=1000):
@@ -114,7 +117,7 @@ if __name__ == "__main__":
         worksheet = spreadsheet.sheet1
 
         worksheet.clear()
-        gspread.dataframe.set_with_dataframe(worksheet, df, include_index=False)
+        set_with_dataframe(worksheet, df, include_index=False)
 
         print(f"Dane zostały przesłane do arkusza Google Sheets o ID '{SHEET_ID}'")
     except Exception as e:
