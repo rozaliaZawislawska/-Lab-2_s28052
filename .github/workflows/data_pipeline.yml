@@ -26,8 +26,8 @@ jobs:
 
       - name: Run Data Cleaning and Standardization Script
         env:
-          GCP_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
-          SHEET_ID: ${{ secrets.SHEET_ID }}
+          GCP_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }} 
+          SHEET_ID: '1yAadaH9J2lHvn8sbO33jqia4opqYYAHZ1sR7yevztKQ' 
         run: python data_processor.py
 
       - name: Display Report Content
