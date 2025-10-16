@@ -8,16 +8,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
-      # Instalacja bibliotek        
+            
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # Generowanie i automatyczne umieszczanie danych w Sheets
       - name: Upload Data to Google Sheets
         env:
-          # Przekazanie secreta do zmiennej środowiskowej
           GCP_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }} 
-          # Możesz też przekazać ID Arkusza, jeśli nie jest "zaszyty" w skrypcie
           SHEET_ID: '1yAadaH9J2lHvn8sbO33jqia4opqYYAHZ1sR7yevztKQ' 
         run: python3 generator_danych.py -s 28052

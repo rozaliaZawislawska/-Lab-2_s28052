@@ -1,0 +1,7 @@
+Raport z Czyszczenia i Standaryzacji Danych (Lab2)
+==================================================
+Pocz¹tkowa liczba wierszy: 1000
+Wiersze usuniête (nadmiar braków): 20 (2.00%)
+Komórki uzupe³nione brakami: 32
+Procent wszystkich komórek, które zosta³y zmienione: 28.46%
+Koñcowa liczba wierszy: 980
