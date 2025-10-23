@@ -1,0 +1,28 @@
+name: CI/CD - Walidacja i Trening Modelu
+
+on:
+  push:
+    branches:
+      - Lab3
+  workflow_dispatch: 
+
+jobs:
+  train_and_validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 1. Checkout Code 
+      uses: actions/checkout@v4
+      
+    - name: 2. Setup Python 
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.14'
+        
+    - name: Install UV and Dependencies from requirements.txt 
+      run: |
+        pip install uv
+        uv pip install -r requirements.txt
+        
+    - name: Model Training 
+      run: python main.py
