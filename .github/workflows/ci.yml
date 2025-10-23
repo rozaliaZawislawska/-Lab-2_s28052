@@ -22,7 +22,7 @@ jobs:
     - name: Install UV and Dependencies from requirements.txt 
       run: |
         pip install uv
-        uv pip install -r requirements.txt
+        uv pip install -r requirements.txt --system
         
     - name: Model Training 
       run: python main.py

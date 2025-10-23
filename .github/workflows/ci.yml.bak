@@ -1,29 +1,28 @@
-# .github/workflows/ci.yml
+name: CI/CD - Walidacja i Trening Modelu
 
-name: CI/CD Pipeline for ML Model Training
 on:
   push:
     branches:
-      - main
+      - Lab3
+  workflow_dispatch: 
 
 jobs:
-  train-model:
+  train_and_validate:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4 
-
-    - name: Set up Python environment
-      uses: actions/setup-python@v5 
-      with:
-          python-version: "3.14.0"
-
-    - name: Install dependencies
-      run: pip install -r requirements.txt
-
-    - name: Run model training and save accuracy
-      run: python s28052.py > accuracy.txt
+    - name: 1. Checkout Code 
+      uses: actions/checkout@v4
       
-    - name: Display training result
-      run: cat accuracy.txt
+    - name: 2. Setup Python 
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.14'
+        
+    - name: Install UV and Dependencies from requirements.txt 
+      run: |
+        pip install uv
+        uv pip install -r requirements.txt
+        
+    - name: Model Training 
+      run: python main.py
