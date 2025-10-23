@@ -181,17 +181,16 @@ def train_and_select_best_model(X_train, X_test, y_train, y_test, preprocessor):
         
         y_pred = full_pipeline.predict(X_test)
         
-        # --- OBLICZANIE METRYK ---
         r2 = r2_score(y_test, y_pred)
-        mae = mean_absolute_error(y_test, y_pred) # <-- NOWA LINIA
-        mse = mean_squared_error(y_test, y_pred)   # <-- NOWA LINIA
+        mae = mean_absolute_error(y_test, y_pred) 
+        mse = mean_squared_error(y_test, y_pred)  
         # ------------------------
         
-        results[name] = {'r2': r2, 'mae': mae, 'mse': mse, 'pipeline': full_pipeline} # <-- ZMIENIONA LINIA
+        results[name] = {'r2': r2, 'mae': mae, 'mse': mse, 'pipeline': full_pipeline}
         
         logger.info(f"Model {name} R-squared on test set: {r2:.4f}")
-        logger.info(f"Model {name} MAE on test set: {mae:.4f}") # <-- NOWA LINIA
-        logger.info(f"Model {name} MSE on test set: {mse:.4f}") # <-- NOWA LINIA
+        logger.info(f"Model {name} MAE on test set: {mae:.4f}")
+        logger.info(f"Model {name} MSE on test set: {mse:.4f}") 
         
         if r2 > best_r2:
             best_r2 = r2
@@ -224,9 +223,5 @@ if __name__ == "__main__":
             X_train, X_test, y_train, y_test, preprocessor
         )
         logger.info("Stage 3 (Model Training and Selection) completed.")
-
-        # --- Stage 4 (Evaluation and Reporting) would follow here ---
-        # (This will be implemented in the next step, using 'training_results')
         
-        logger.info("\nScript execution halted after Stage 3. Ready for Evaluation (Stage 4).")
         
