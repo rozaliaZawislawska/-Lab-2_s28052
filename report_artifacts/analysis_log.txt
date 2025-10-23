@@ -1,0 +1,51 @@
+2025-10-23 23:06:02,375 - INFO - Logger setup complete. All output directed to console and log file.
+2025-10-23 23:06:02,375 - INFO - --- Starting Lab3: Predictive Model Analysis (Stage 1: EDA) ---
+2025-10-23 23:06:02,375 - INFO - Starting data loading process...
+2025-10-23 23:06:02,808 - INFO - Data loaded successfully. Initial shape: (4739, 14)
+2025-10-23 23:06:02,811 - INFO - No missing values (NaN) detected. Data is clean.
+2025-10-23 23:06:02,811 - INFO - 
+--- 3. Statistical Analysis ---
+2025-10-23 23:06:02,811 - INFO - Descriptive Statistics for Numerical Features:
+2025-10-23 23:06:02,822 - INFO -             count       mean       std        min        25%        50%        75%        max
+score      4739.0  50.889029  8.701910  28.950001  43.924999  51.189999  57.769999  72.809998
+unemp      4739.0   7.597215  2.763581   1.400000   5.900000   7.100000   8.900000  24.900000
+wage       4739.0   9.500506  1.343067   6.590000   8.850000   9.680000  10.150000  12.960000
+distance   4739.0   1.802870  2.297128   0.000000   0.400000   1.000000   2.500000  20.000000
+tuition    4739.0   0.814608  0.339504   0.257510   0.484990   0.824480   1.127020   1.404160
+education  4739.0  13.807765  1.789107  12.000000  12.000000  13.000000  16.000000  18.000000
+2025-10-23 23:06:03,171 - INFO - Saved: Distribution plot for score
+2025-10-23 23:06:03,469 - INFO - Saved: Correlation Matrix Heatmap
+2025-10-23 23:06:03,688 - INFO - Saved: Box Plot (score vs. gender)
+2025-10-23 23:06:03,688 - INFO - Stage 1 (EDA) completed.
+2025-10-23 23:06:03,688 - INFO - 
+--- Stage 2: Feature Engineering and Data Preparation ---
+2025-10-23 23:06:03,690 - INFO - Numerical features identified: ['unemp', 'wage', 'distance', 'tuition', 'education']
+2025-10-23 23:06:03,690 - INFO - Categorical features identified: ['gender', 'ethnicity', 'fcollege', 'mcollege', 'home', 'urban', 'income', 'region']
+2025-10-23 23:06:03,690 - INFO - Numerical features will be standardized (StandardScaler).
+2025-10-23 23:06:03,690 - INFO - Categorical features will be encoded (OneHotEncoder).
+2025-10-23 23:06:03,691 - INFO - Preprocessing pipeline (ColumnTransformer) defined.
+2025-10-23 23:06:03,693 - INFO - Data split completed (80% Train, 20% Test). Random State: 42
+2025-10-23 23:06:03,693 - INFO - X_train shape: (3791, 13), X_test shape: (948, 13)
+2025-10-23 23:06:03,694 - INFO - Stage 2 (Feature Engineering) completed.
+2025-10-23 23:06:03,694 - INFO - 
+--- Stage 3: Model Training and Selection ---
+2025-10-23 23:06:03,694 - INFO - Training model: Linear_Regression...
+2025-10-23 23:06:03,712 - INFO - Model Linear_Regression training complete.
+2025-10-23 23:06:03,720 - INFO - Model Linear_Regression R-squared on test set: 0.3523
+2025-10-23 23:06:03,720 - INFO - Model Linear_Regression MAE on test set: 5.7543
+2025-10-23 23:06:03,720 - INFO - Model Linear_Regression MSE on test set: 49.1138
+2025-10-23 23:06:03,721 - INFO - Training model: Random_Forest...
+2025-10-23 23:06:04,998 - INFO - Model Random_Forest training complete.
+2025-10-23 23:06:05,025 - INFO - Model Random_Forest R-squared on test set: 0.2924
+2025-10-23 23:06:05,025 - INFO - Model Random_Forest MAE on test set: 5.8536
+2025-10-23 23:06:05,025 - INFO - Model Random_Forest MSE on test set: 53.6624
+2025-10-23 23:06:05,026 - INFO - Training model: Gradient_Boosting...
+2025-10-23 23:06:05,364 - INFO - Model Gradient_Boosting training complete.
+2025-10-23 23:06:05,372 - INFO - Model Gradient_Boosting R-squared on test set: 0.3659
+2025-10-23 23:06:05,372 - INFO - Model Gradient_Boosting MAE on test set: 5.7015
+2025-10-23 23:06:05,373 - INFO - Model Gradient_Boosting MSE on test set: 48.0831
+2025-10-23 23:06:05,373 - INFO - 
+Best model selected: Gradient_Boosting (R^2: 0.3659)
+2025-10-23 23:06:05,373 - INFO - Stage 3 (Model Training and Selection) completed.
+2025-10-23 23:06:05,373 - INFO - 
+Script execution halted after Stage 3. Ready for Evaluation (Stage 4).
